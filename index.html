@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+    <title>Kamal Sbai</title>
+</head>
+<body onload = "setTimeout(movePic,3000)">
+    
+
+
+<div class="header" id="header">
+
+<h1 class="titre" id="titre">KAMAL SBAI</h1>
+
+</div>
+
+
+
+<div class="image">
+    <h2 id="firstp" class="par">Web developper</h2>
+    <h2 id="secondp" class="par">Digital content creator</h2>
+    <h2 id="thirdp" class="par">Video maker</h2>
+    <img src="moi.JPG" id="mypic">
+
+    
+</div>
+
+
+
+
+
+<nav id="navcontainer">
+
+
+    <ul>
+        <li ><a href="#" id="aboutme" >About Me</a></li>
+        <li><a href="#">Coding Projects</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Social Medias</a></li>
+
+    </ul>
+
+
+</nav>
+
+
+
+
+
+<script>
+    
+ 
+
+    function movePic(){
+
+        let image = document.getElementById('mypic');
+        
+        image.style.marginLeft="50%";
+        image.style.transition="2s all";
+
+        let titre = document.getElementById('titre');
+
+        titre.style.color="white";
+        titre.style.letterSpacing="8px";
+        titre.style.fontSize="40px";
+        titre.style.marginLeft="30%";
+        titre.style.transition="1s ease-in";
+        
+
+        let header = document.getElementById('header');
+
+        header.style.height="200px";
+        header.style.transition="1s ease-out";
+
+
+        let firstp = document.getElementById('firstp');
+        let secondp = document.getElementById('secondp');
+        let thirdp = document.getElementById('thirdp');
+        
+        function bouger(){
+            firstp.style.marginLeft="10px";
+            firstp.style.transition="1s";
+
+        }
+        
+        setTimeout(bouger,2000)
+    
+
+    function bougerr(){
+            secondp.style.marginLeft="10px";
+            secondp.style.transition="1s";
+
+        }
+        
+        setTimeout(bougerr,2500)
+
+
+        function bougerrr(){
+            thirdp.style.marginLeft="10px";
+            thirdp.style.transition="1s";
+
+        }
+        
+        setTimeout(bougerrr,3000)
+
+
+        function colorer(){
+            firstp.style.color="white";
+            firstp.style.fontStyle="uppercase";
+            firstp.style.transition="3s all";
+
+            secondp.style.color="white";
+            secondp.style.fontStyle="uppercase";
+            secondp.style.transition="3s all";
+
+            thirdp.style.color="white";
+            thirdp.style.fontStyle="uppercase";
+            thirdp.style.transition="3s all";
+        }
+
+        setTimeout(colorer,4000)
+
+
+        function titreplacetoi(){
+
+            titre.style.position="relative";
+            titre.style.marginLeft="-100px";
+            titre.style.transition="3s";
+
+        }
+
+        setTimeout(titreplacetoi,4300)
+
+
+
+        function removedescription(){
+
+
+
+         firstp.style.marginLeft="-600px";
+         secondp.style.marginLeft="-600px";
+         thirdp.style.marginLeft="-600px";
+
+         firstp.style.transition="0.5s";
+         secondp.style.transition="0.5s";
+         thirdp.style.transition="0.5s";
+
+
+        }
+
+        setTimeout(removedescription,6000)
+
+
+        function shownav(){
+
+            let navcontainer = document.getElementById('navcontainer');
+
+            navcontainer.style.marginLeft="10px";
+            navcontainer.style.transition="2s";
+
+        }
+
+        setTimeout (shownav,6000)
+
+
+       
+
+
+    };
+
+
+    /*let aboutme = document.getElementById('aboutme');
+
+    aboutme.onclick = function(){
+
+        mypic.style.width="300px";
+        pypic.style.height="120px";
+        mypic.style.transition="1s";
+    }; */
+
+
+
+    
+
+
+</script>
+
+</body>
+
+</html>
